@@ -19,4 +19,41 @@ Core Code bootcamp
 ##### 3. 51966 in binary 1100101011111110, in hexa cafe and 16fe.
 
 
+.data
+	msg: .asciiz "Ingrese el primer numero: \n"
+	msg2: .asciiz "Ingrese el segundo numero: \n"
+	msg3: .asciiz "El resultado es: \n"	
+.text
+	main:
+		li $v0, 4
+		la $a0, msg
+		syscall
+
+		li $v0, 5
+		syscall
+
+		move $t0, $v0
+
+		li $v0, 4
+		la $a0, msg2
+		syscall
+
+		li $v0, 5
+		syscall
+
+		move $t1, $v0
+
+		
+      		
+      		add $t2, $t0, $t1
+      		
+      		li $v0,4
+      		la $a0, msg3
+      		syscall
+      		
+      		li $v0,1
+      		move $a0,$t2
+      		syscall
+      		
+
 
