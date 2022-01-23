@@ -58,6 +58,7 @@ Core Code bootcamp
 
 ## Week2 challenges (Tuesday)
 ###### 1 Solution
+````
 function multiply(a, b){
   return a * b
 }
@@ -70,20 +71,26 @@ let counter = 0;
   }
   return counter;
 }
+````
 
 ###### 3 Solution
+````
 function getChar(c){
   return String.fromCharCode(c);
 }
+````
 
 ###### 4 Solution
+````
 function addBinary(a,b) {
  let c = a+b;
   let cBinary = c.toString(2);
   return cBinary;
 }
+````
 
 ##### 5 Solution
+````
 function finalGrade (exam, projects) {
   if(exam > 90 || projects > 10) {
     
@@ -101,20 +108,26 @@ function finalGrade (exam, projects) {
   return 0;   
   
 }
+````
 
 ## Week2 challenges (Wednesday)
 ###### 1 Solution
+````
 function dutyFree(normPrice, discount, hol){
   let realDiscount = (normPrice/100)*discount;
 return Math.floor(hol/realDiscount);
 }
+````
 
 ###### 2 Solution
+````
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs((sonYearsOld*2)-dadYearsOld);
 }
+````
 
 ###### 3 Solution
+````
 function validSpacing(s) {
   if(s.length == 0) return true;
   if(s[0]== ' ' || s[s.length-1]== ' ') return false;
@@ -126,8 +139,10 @@ function validSpacing(s) {
   }
   return true;
 }
+````
 
 ###### 4 Solution
+````
 function fakeBin(x){  
   let array=[];
   for(let i = 0, length = x.length; i< length; i++){
@@ -143,3 +158,4 @@ function fakeBin(x){
   }
   return array.join('');
 }
+````
