@@ -202,3 +202,11 @@ function persistence(num) {
 }
 
 ````
+###### 5 Challenge
+````
+1 - I'm Jorge Gómez, I currently work as a software developer.
+2 - my skills include, html5, css3, jquery, bootstrap, php, javascript, nodejs, angularjs, ionic, mysql and mongodb.
+3 - I want to lead large projects, contribute and execute effectively.
+4 - I want to continue specializing in new and demanded technologies, after that my goal is to direct large important projects for important people and companies.
+5 - Responsibility, Loyalty, Commitment, Honesty.
+````
