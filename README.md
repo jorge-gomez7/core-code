@@ -159,3 +159,46 @@ function fakeBin(x){
   return array.join('');
 }
 ````
+
+## Week 2 challenges (Thursday)
+###### 1 Solution
+````
+function remove (string) {  
+  while(string && string.slice(-1)=='!'){
+   string = string.slice(0,-1);
+ }
+  return string;
+}
+````
+
+###### 2 Solution
+function shortcut (string) {
+  return string.replace(/[aeiou]/g, '');
+}
+
+###### 3 Solution
+````
+const rps = (p1, p2) => {
+  if(p1==p2)
+    return 'Draw!';
+  if(p1=='rock' && p2=='scissors')
+    return 'Player 1 won!';
+  if(p1=='scissors' && p2=='paper')
+    return 'Player 1 won!';
+  if(p1=='paper' && p2=='rock')
+    return 'Player 1 won!';
+  else
+    return 'Player 2 won!';
+};
+````
+
+###### 4 Solution
+````
+function persistence(num) {
+   for (var i = 0; num > 9; i++) {
+     num = num.toString().split('').reduce((valorAnterior, valorActual) => valorAnterior * valorActual);
+   }
+   return i;
+}
+
+````
