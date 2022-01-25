@@ -210,3 +210,72 @@ function persistence(num) {
 4 - I want to continue specializing in new and demanded technologies, after that my goal is to direct large important projects for important people and companies.
 5 - Responsibility, Loyalty, Commitment, Honesty.
 ````
+
+## Week 3 challenges (Monday)
+###### 1 Solution
+````
+function likes(names) {
+   if(names.length==0){
+     return 'no one likes this';
+   }
+  if(names.length==1){
+    return names[0]+' likes this';
+  }
+  
+  if(names.length==2){
+    return names[0]+' and '+names[1]+' like this';
+  }
+  
+  if(names.length==3){
+    return names[0]+', '+names[1]+' and '+names[2]+' like this';
+  }
+ 
+  if(names.length>3){
+    let num = names.length-2;
+    return names[0]+', '+names[1]+' and '+num+' others like this';
+  }
+  
+}
+````
+
+###### 2 Solution
+````
+var countBits = function(n) {
+  let binary = n.toString(2);
+  let counter = 0;
+  for(let i=0, length = binary.length; i<length; i++){
+    if(binary[i]=='1'){
+      counter+=1;
+    }
+  }
+  
+  return counter;
+  
+  
+};
+````
+
+###### 3 Solution
+````
+decodeMorse = function(morseCode){
+  let string = '';
+  let counterWords = 1;
+  let arrayWords = morseCode.trim().split('   ');
+  
+  arrayWords.forEach(word => {
+    let letters = word.split(' ');
+    
+    letters.forEach(letter =>{
+      string+=MORSE_CODE[letter]
+    })
+    if(counterWords != arrayWords.length){
+      string+=' ';
+    }
+    
+    counterWords++;
+    
+  });
+  
+  return string;
+}
+````
