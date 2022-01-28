@@ -279,3 +279,13 @@ decodeMorse = function(morseCode){
   return string;
 }
 ````
+
+## Week 3 challenges (Thursday)
+###### 3 Solution
+````
+function list(arr){  
+  const coma = ', ';
+  const sign =' & ';
+ return arr.reduce((pre, curr, indice)=>`${pre}${(indice==arr.length-1 ? sign : coma)}${curr.name}`, '').slice(2).trim();
+}
+````
