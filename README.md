@@ -280,7 +280,60 @@ decodeMorse = function(morseCode){
 }
 ````
 
+## Week 3 challenges (Tuesday)
+###### 1 Solution
+````
+function order(words){  
+  return words.split(' ').sort((a,b)=>{
+    return a.match(/\d/) - b.match(/\d/);
+  }).join(' ');
+}
+````
+
+###### 2 Solution
+````
+function duplicateCount(text){
+  return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+}
+````
+
+###### 3 Solution
+````
+function pigIt(str){
+ return arr = str.split(' ').map(word => `${word.substr(1)}${word.substr(0, 1)}ay `).join('').trim();  
+}
+````
+
 ## Week 3 challenges (Thursday)
+###### 1 Solution
+````
+
+````
+
+###### 2 Solution
+````
+function encryptThis(text) {
+  let strArr = text.split(' ');
+  let output = [];
+  
+  strArr.forEach(str => {
+    if (str.length === 1) {
+      output.push(str.charCodeAt(0));
+    } 
+    else {
+      let tempStr = str.split('');
+      tempStr[0] = str.charCodeAt(0);
+      tempStr[1] = str[str.length - 1];
+      tempStr[str.length - 1] = str[1];
+      output.push(tempStr.join(''));
+    }
+  });
+  
+  return output.join(' ');
+}
+
+````
+
 ###### 3 Solution
 ````
 function list(arr){  
