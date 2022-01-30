@@ -304,6 +304,53 @@ function pigIt(str){
 }
 ````
 
+## Week 3 challenges (Wednesday)
+###### 1 Solution
+````
+function validParentheses(parens){
+  let res = 0;  
+  for (var i = 0; i < parens.length; i++) {
+    if(parens[i]=='(') res+=1;
+    if(parens[i]==')') res-=1;
+         if(res<0) return false;
+  }  
+    return res==0;
+}
+````
+
+###### 2 Solution
+````
+function toCamelCase(str){
+  let words = str.split('');  
+  return words.map(function(elemento, indice){
+    if(elemento == '-' || elemento == '_'){
+      elemento = words[indice+1].toUpperCase();
+      words.splice(indice+1, 1);
+    }
+    return elemento;
+  }).join('');
+}
+````
+
+###### 3 Solution
+````
+function uniqueInOrder(iterable){
+
+  const res = [ ]
+
+  for(let i = 0; i < iterable.length; i++){
+  
+    if(iterable[i] !== iterable[i+1]){
+      res.push(iterable[i])
+    }
+  
+  }
+
+  return res
+}
+````
+
+
 ## Week 3 challenges (Thursday)
 ###### 1 Solution
 ````
