@@ -389,3 +389,41 @@ function list(arr){
  return arr.reduce((pre, curr, indice)=>`${pre}${(indice==arr.length-1 ? sign : coma)}${curr.name}`, '').slice(2).trim();
 }
 ````
+
+###### Test Solution 
+````function computeCheckDigit(identificationNumber) {  
+  var string = identificationNumber.toString();
+  arrayPar=[];
+  arrayInpar=[];  
+  for(let i=0, length=string.length; i<length; i++){
+    if(i%2==0){
+      arrayPar.push(string[i]);
+    }else{
+      arrayInpar.push(string[i]);
+    }    
+  }
+ 
+  arrayPar = arrayPar.map(x => parseInt(x));
+  arrayInpar = arrayInpar.map(x=> parseInt(x));
+ 
+  arrayPar = arrayPar.reduce((pre, act)=>{
+    return pre+act;
+  });
+  
+  resPar = arrayPar*3;
+  
+  arrayInpar = arrayInpar.reduce((pre, act) => {
+    return pre+act;
+  });
+  
+  resInpar = arrayInpar+resPar;
+  
+  resInpar = String(resInpar).split("").map((resInpar)=>{
+  return Number(resInpar)
+})
+  
+  return 10-resInpar.pop();
+  
+  
+}
+````
