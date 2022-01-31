@@ -390,8 +390,9 @@ function list(arr){
 }
 ````
 
-###### Test Solution 
-````function computeCheckDigit(identificationNumber) {  
+###### Friday Test 1 Solution 
+````
+function computeCheckDigit(identificationNumber) {  
   var string = identificationNumber.toString();
   arrayPar=[];
   arrayInpar=[];  
