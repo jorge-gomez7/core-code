@@ -868,3 +868,44 @@ function test5() {
 
 [test1, test2, test3, test4, test5].forEach((test) => test());
 ````
+
+###### challenge => [kata](https://www.codewars.com/kata/54da5a58ea159efa38000836 "Kata")
+###### Solution
+````
+function findOdd(A) {
+  let count = 0;
+   let last;  
+   A.sort();  
+   for (let i = 0; i < A.length; i++){
+      if (A[i] === last) {
+         count++;
+         continue;
+      };
+    
+      if(count % 2){
+         return last;
+      };
+      last = A[i];
+      count = 1;
+   };
+   return last;
+}
+````
+
+###### challenge => [kata](https://www.codewars.com/kata/5264d2b162488dc400000001 "kata")
+###### Solution
+````
+function spinWords(string){
+  const sentenceArray = string.split(' ');
+  let result = '';
+  sentenceArray.map((str, i) => {
+    if (str.length >= 5){
+      sentenceArray[i] = str.split('').reverse().join('');
+    } else {
+      sentenceArray[i] = str;
+    }
+  result = sentenceArray.join(' ');
+  });
+return result;
+}
+````
