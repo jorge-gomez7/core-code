@@ -910,10 +910,26 @@ return result;
 }
 ````
 
-###### challenge => [kata](https://www.codewars.com/kata/523f5d21c841566fde000009 "kata")
+## Week 4 challenges (Wednesday)
+###### challenge 1 => [kata](https://www.codewars.com/kata/523f5d21c841566fde000009 "kata")
 ###### Solution
 ````
 function arrayDiff(a, b) {
   return a.filter(e=> !b.includes(e));
+}
+````
+
+###### challenge 2 => [kata](https://www.codewars.com/kata/525f50e3b73515a6db000b83 "Kata")
+###### Solution
+````
+function createPhoneNumber(numbers){
+  var format = "(xxx) xxx-xxxx";
+  
+  for(var i = 0; i < numbers.length; i++)
+  {
+    format = format.replace('x', numbers[i]);
+  }
+  
+  return format;
 }
 ````
