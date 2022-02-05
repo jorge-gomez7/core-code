@@ -933,3 +933,41 @@ function createPhoneNumber(numbers){
   return format;
 }
 ````
+
+## Week challenges (Thursday)
+###### challenge 1 => [kata](https://www.codewars.com/kata/545cedaa9943f7fe7b000048 "kata")
+###### Solution
+````
+function isPangram(string){
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  const str = string.toLowerCase();
+  
+  for (let i = 0, length=alphabet.length; i < length; i += 1) {
+    if (str.indexOf(alphabet[i]) === -1) {
+      return false;
+    }
+  }  
+  return true;
+}
+````
+
+###### challenge 2 => [kata](https://www.codewars.com/kata/5839edaa6754d6fec10000a2 "kata")
+###### Solution
+````
+function findMissingLetter(array){  
+  let first = array[0].charCodeAt(0);  
+  for(let i=0, length=array.length; i<length; i++){
+    if(first+i != array[i].charCodeAt(0)){
+      return String.fromCharCode(first+i);
+    }
+  }  
+}
+````
+
+###### challengue 3 =>  [kata](https://www.codewars.com/kata/585d7d5adb20cf33cb000235 "kata")
+###### Solution
+````
+function findUniq(arr) {
+  return +arr.filter( (value) => { return arr.indexOf(value) == arr.lastIndexOf(value) } );
+}
+````
