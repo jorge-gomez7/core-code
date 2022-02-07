@@ -971,3 +971,18 @@ function findUniq(arr) {
   return +arr.filter( (value) => { return arr.indexOf(value) == arr.lastIndexOf(value) } );
 }
 ````
+
+## Week challenges (Monday)
+###### challenge 1 => [kata](https://www.codewars.com/kata/515e271a311df0350d00000f/train/typescript "kata")
+###### Solution
+````
+export function squareSum(numbers: number[]): number {
+    let total = 0;
+    let square = numbers.map(item => item * item);
+  
+    for(let i=0, length=square.length; i<length; i++) {
+     total += square[i]; 
+  }
+  return total;
+}
+````
