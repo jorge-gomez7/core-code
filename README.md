@@ -934,7 +934,7 @@ function createPhoneNumber(numbers){
 }
 ````
 
-## Week challenges (Thursday)
+## Week 4 challenges (Thursday)
 ###### challenge 1 => [kata](https://www.codewars.com/kata/545cedaa9943f7fe7b000048 "kata")
 ###### Solution
 ````
@@ -972,7 +972,7 @@ function findUniq(arr) {
 }
 ````
 
-## Week challenges (Monday)
+## Week 5 challenges (Monday)
 ###### challenge 1 => [kata](https://www.codewars.com/kata/515e271a311df0350d00000f/train/typescript "kata")
 ###### Solution
 ````
@@ -984,5 +984,22 @@ export function squareSum(numbers: number[]): number {
      total += square[i]; 
   }
   return total;
+}
+````
+
+###### challenge 2 => [kata](https://www.codewars.com/kata/563b662a59afc2b5120000c6/ "kata")
+###### Solution
+````
+export class G964 {
+    public static nbYear = (p0, percent, aug, p) => {
+    let population = p0;
+    let years = 0;
+    while(population < p)
+    {
+      population = population + (population * (percent/100)) + aug; 
+      years++;
+    }
+    return years;
+    }
 }
 ````
