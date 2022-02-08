@@ -1,5 +1,5 @@
-## core-code
-Core Code bootcamp
+## Core Code BootCamp
+
 ## Week1 Tuesday
 
 ##### 2.Java can be considered both a compiled and an interpreted language.
@@ -18,7 +18,7 @@ Core Code bootcamp
 
 ##### 3. 51966 in binary 1100101011111110, in hexa cafe and 16fe.
 
-
+````
 .data
 	msg: .asciiz "Ingrese el primer numero: \n"
 	msg2: .asciiz "Ingrese el segundo numero: \n"
@@ -54,7 +54,7 @@ Core Code bootcamp
       		li $v0,1
       		move $a0,$t2
       		syscall
-      		
+````
 
 ## Week2 challenges (Tuesday)
 ###### 1 Solution
