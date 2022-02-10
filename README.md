@@ -1003,3 +1003,41 @@ export class G964 {
     }
 }
 ````
+## Week 5 challengues (Wednesday)
+###### Excercise No. 1 => [here to see](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/typescript 'go to code!')
+###### The Solution
+````typescript
+export function duplicateEncode(word: string){
+  
+  let processedWord: string[] = word.toLowerCase().split('');
+  let res: string = '';
+  
+  let process = processedWord.map((val, i)=>{
+    if(processedWord.lastIndexOf(processedWord[i]) == processedWord.indexOf(processedWord[i])){
+      res+='(';
+    }else{
+    res+=')';  
+    }
+    
+  });  
+  return res;    
+}
+````
+
+###### Excercise No. 2 => [here to see](https://www.codewars.com/kata/54da5a58ea159efa38000836/typescript 'go to code!')
+###### The Solution
+````typescript
+export const findOdd = (xs: number[]): number => {
+    return xs.reduce((a, b) => a ^ b, 0);
+}
+````
+###### Excercise No. 4 => [here to see](https://www.codewars.com/kata/5ce399e0047a45001c853c2b/typescript 'go to code!')
+###### The Solution
+````typescript
+export function partsSums(ls: number[]): number[] {
+  let length = ls.length;
+  let total = ls.reduce( ( prev, curr ) => prev + curr, 0 );
+  ls.unshift( 0 );
+  return ls.map( ( val, i ) => total -= val );
+}
+````
