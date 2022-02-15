@@ -1060,3 +1060,14 @@ export function longestConsec(strarr: string[], k: number): string {
 }
 }
 ````
+
+###### Friday Test Solution
+````javascript
+function javanais (str){
+  return str.replace(/[^aeiou]([aeiou])/g, (match)=>{
+    return match.replace(/[aeiou]/g, `av$&`);
+  })
+}
+
+console.log(javanais('party is going tonight'));
+````
