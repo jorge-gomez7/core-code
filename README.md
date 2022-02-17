@@ -1091,7 +1091,7 @@ export const towerBuilder = (nFloors: number): string[] => {
 
 ###### Monday Excercise No. 2 => [here to see](https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/ 'go to code')
 ###### The Solution
-````typescrit
+````typescript
 export const high = (str: string): string =>{
      let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
     "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
