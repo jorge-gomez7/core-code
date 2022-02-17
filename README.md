@@ -1088,3 +1088,30 @@ export const towerBuilder = (nFloors: number): string[] => {
   return res;
 }
 ````
+
+###### Monday Excercise No. 2 => [here to see](https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/ 'go to code')
+###### The Solution
+````Typescrit
+export const high = (str: string): string =>{
+     let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
+    "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",
+    "w", "x", "y", "z"
+    ];
+    let heighWord = "";
+    let heighScore = 0;
+    let words = str.split(" ");
+    for (let i = 0; i < words.length; i++) {
+      let score = 0;
+      let word = words[i];
+      for (let j = 0; j < word.length; j++) {
+        let char = word[j];
+        score += (alphabet.indexOf(char) + 1);
+      }
+      if (score > heighScore) {
+        heighScore = score;
+        heighWord = word;
+      }
+    }
+    return heighWord;
+}
+````
