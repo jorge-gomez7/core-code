@@ -1071,3 +1071,20 @@ function javanais (str){
 
 console.log(javanais('party is going tonight'));
 ````
+
+## Week 6 Challenges
+###### Monday Excercise No. 1 => [here to see](https://www.codewars.com/kata/576757b1df89ecf5bd00073b/train/typescript 'go to code!')
+###### The Solution
+````typescript
+export const towerBuilder = (nFloors: number): string[] => {
+    let space: string = '';
+    let content: string = '';
+    let res: string[] = [];
+  for(let i = 1; i <= nFloors; i++){
+    space = ' '.repeat(nFloors - i);    
+    content  = '*'.repeat((2*i) - 1);
+    res.push(`${space}${content}${space}`);
+  }
+  return res;
+}
+````
