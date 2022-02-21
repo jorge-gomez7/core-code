@@ -1115,3 +1115,28 @@ export const high = (str: string): string =>{
     return heighWord;
 }
 ````
+
+###### Friday LastTest Solution
+````javascript
+function calculateTotalPrice(prices, discount){
+  prices = prices.sort();
+  let indexMostExpensive = prices.length-1;
+  
+  let realDiscount = prices[indexMostExpensive]/100*discount;
+  
+  let discountPrice = prices[indexMostExpensive]-realDiscount;
+  
+  
+  
+  prices.splice(indexMostExpensive, 1, discountPrice);
+  
+  
+  
+  let res = prices.reduce((pre, act)=>{
+    return pre + act;
+  })
+  
+  return Math.floor(res);  
+}
+console.log(calculateTotalPrice([10.25, 12, 12.75, 5.10], 10))
+````
