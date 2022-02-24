@@ -1140,3 +1140,36 @@ function calculateTotalPrice(prices, discount){
 }
 console.log(calculateTotalPrice([10.25, 12, 12.75, 5.10], 10))
 ````
+
+## Week 7 Challenges
+###### Wednesday Excercise No. 1 => [here to see](https://www.codewars.com/kata/58223370aef9fc03fd000071/ 'go to code!')
+###### The Solution
+````javascript
+function dashatize(num) {
+  if(!Number.isInteger(num))
+    return 'NaN'
+   
+  if(num ===0)
+    return '0';
+  
+  tempArr = [];
+  
+  let numberArr = Math.abs(num).toString().split('');  
+  
+  let process =  numberArr.map(el=>{
+    if(Number(el)%2 ==0)  tempArr.push(el);
+    if(Number(el)%2 !=0) tempArr.push(`-${el}-`);
+  }); 
+  let removeDash = tempArr.join('');   
+  
+ removeDash = removeDash.replace(/--/g,'-');    
+  
+  if(removeDash.split('').pop() == '-')
+    removeDash = removeDash.slice(0,-1);  
+  
+  if(removeDash.split('')[0]=='-')
+    removeDash = removeDash.slice(1);
+  
+  return removeDash;
+}
+````
