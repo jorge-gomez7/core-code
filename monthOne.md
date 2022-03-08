@@ -1191,7 +1191,10 @@ export const EggList = ({eggs}) => {
 
 export const EasterEgg = ({name}) => {
   return 
-  <li>{name}</li>;
+  (
+  <li>{name}</li>
+  );
+  
   
 };
 ````
