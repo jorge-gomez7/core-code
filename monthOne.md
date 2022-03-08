@@ -1173,3 +1173,25 @@ function dashatize(num) {
   return removeDash;
 }
 ````
+## Week 9 Challenges
+###### Monday Excercise No. 1 => [here to see](https://www.codewars.com/kata/5a95947f4a6b342636000173/train/javascript)
+###### The solution
+````javascript
+import React from 'react';
+
+export const EggList = ({eggs}) => {  
+  return (    
+   <ul>
+     {eggs.map((el, i)=>{
+    return <EasterEgg key={i} name={el}/>    
+  })}
+    </ul>   
+  )
+};
+
+export const EasterEgg = ({name}) => {
+  return 
+  <li>{name}</li>;
+  
+};
+````
